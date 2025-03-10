@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números Aleatórios</title>
+
+    <!-- arquivo de configuração -->
+    <link rel="stylesheet" href="./assets/css/config.css">
+    <!-- arquivo principal -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- arquivo JS -->
+    <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+
+        <h1>Sorteador de Números Aleatórios</h1>
+
+    </header><!--cabecalho-->
+    
+    <main class="container-main">
+
+        <div class="constainer-main__sliders">
+
+            <div class="container-main__sliders__valor-min">
+
+                <label>Valor Mínimo <span id="valor_minimo"></span>: <input type="range" name="range_min" id="range-min" min="1" max="100" value="1"></label>
+
+            </div><!--container-main__sliders__valor-min-->
+
+
+            <div class="container-main__sliders__valor-max">
+
+                <label>Valor Máximo <span id="valor_maximo"></span>: <input type="range" name="range_max" id="range-max" min="1" max="100" value="1"></label>
+
+            </div><!--container-main__sliders__valor-max-->
+
+        </div><!--constainer-main__sliders-->
+
+        <div class="container-main__botoes">
+
+            <button class="container-main__botoes__sortear">Sortear</button>
+            <button class="container-main__botoes__limpar">Limpar histórico</button>
+
+        </div><!--container-main__botoes-->
+
+        <div class="container-main__resultado hide">
+
+            <span class="container-main__resultado__saida"></span>
+
+        </div><!--container-main__resultado-->
+
+        <div class="container-main__historico">
+
+            <h2 class="container-main__historico-titulo">Histórico</h2>
+            <ul class="container-main__historico-lista"></ul>
+
+        </div><!--container-main__historico-->
+
+    </main><!--container-main-->
+
+</body>
+</html>
