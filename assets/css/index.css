@@ -2,6 +2,124 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Mono", monospace, sans-serif;
+    color: var(--color-text);
+}
+
+
+.cabecalho{
+    width: 100vw;
+    height: 80px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--color-secondary);
+}
+
+.container-main{
+    background-color: var(--color-primary);
+    height: calc(100vh - 80px);
+    width: 100vw;
+    text-align: center;
+    position: relative;
+}
+
+.constainer-main__sliders{
+    width: 341px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 550px;
+}
+
+.container-main__sliders__valor-min{
+    width: 100vw;
+    height: 50%;
+    padding-top: 14px;
+}
+
+.container-main__sliders__valor-max{
+    width: 100vw;
+    height: 50%;
+    padding-top: 14px;
+}
+
+.container-main__botoes{
+    width: 250px;
+    height: 60px;
+    position: relative;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+}
+
+.container-main__botoes__sortear{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    color: var(--color-button);
+    background-color: transparent;
+    border: 1px solid var(--color-button);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-main__botoes__sortear:hover{
+    background-color: var(--color-button-hover);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container-main__botoes__limpar{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    color: var(--color-button);
+    background-color: transparent;
+    border: 1px solid var(--color-button);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-main__botoes__limpar:hover{
+    background-color: var(--color-button-hover);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container-main__resultado{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    position: absolute;
+    left: 700px;
+    top: 170px;
+    background-color: var(--color-numero-sorteado-bg);
+}
+
+.container-main__resultado__saida{
+    position: absolute;
+    top: 14px;
+    left: 19px;
+}
+
+.container-main__historico{
+    width: 180px;
+    height: 150px;
+    position: absolute;
+    left: 630px;
+    top: 250px;
+}
+
+.container-main__historico-lista{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .hide{
